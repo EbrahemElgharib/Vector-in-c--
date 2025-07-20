@@ -64,6 +64,7 @@ public:
     }
 
     }
+    //make capicty large if you wanna make is grater
  void expandcapicty(){
      capicty*=2;
     int* arr2 = new int[capicty];
@@ -91,6 +92,7 @@ public:
 
 
     }
+    //shift elment 0 to right
     void right_Rotate(){
      // if(size==capicty)
            // expandcapicty();
@@ -103,6 +105,7 @@ public:
       size-1;
 
     }
+    //get indx of elment and remove it
     int pop(int idx){
        for(int i=idx;i<size-1;i++){
 
@@ -138,7 +141,7 @@ public:
   return arr[val];
 
   }
-
+    //right by times ss
      void Right_Rotate_time(int time){
      while(time--){
         right_Rotate();
